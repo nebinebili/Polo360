@@ -1,0 +1,218 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
+header {
+    background: linear-gradient(#d5d5d5, #fff, #fff, #fff);
+    padding: 37px 0 25px 0;
+    text-align: center; 
+}
+#logo img { width: 30% }
+#menu { padding: 20px 0 0 0 }
+#menu li { 
+    font: 0.7em Tahoma;
+    color: #b7b7b7;
+    padding: 0 10px 7px 10px;
+    border-left: 1px dotted #d6d6d6;
+ }
+#menu li a { 
+    display: block;
+    font: bold 0.9rem Georgia;
+    text-transform: uppercase;
+    color: #666;
+}
+main {
+    min-height: 1280px;
+    background: #fff url('../img/mainbg.jpg') repeat-x;
+    padding: 22px 0 0 0;
+}
+#slider { 
+    height: 340px;
+    border: 1px solid #c6c6c6;
+    border-radius: 8px;
+    background: url('../img/slider1.jpg') center;
+}
+h1 {
+    font: bold 1.5em Georgia;
+    color: #000;
+    text-align: center;
+    padding: 1em 0;
+}
+h2{
+    font: 21px Georgia, 'Times New Roman', Times, serif;
+    letter-spacing: 1px;
+    color: #11719e;
+}
+h3{
+    font: 1.5em Georgia, 'Times New Roman', Times, serif;
+    color: #444444;
+    margin-top: 40px;
+    border-bottom: 1px dashed #d3d3d3;
+    padding: 6px 0;
+}
+h4 {
+    font: bold 1.6em "Gill Sans";
+    color: #444;
+    border-bottom: 1px dashed #d3d3d3;
+    padding: 7px 0;
+    margin: 15px 0;
+}
+#hr1{
+    height: 1px;
+    background: #e5e5e5;
+}
+#hr2{
+    height: 2px;
+    background: #e5e5e5;
+}
+.col {
+    padding: 2em 1em;
+    margin-right: 20px;
+}
+.col:last-child { margin-right: 0; }
+
+footer {
+    height: 183px;
+    background: #333;
+    border-top: 10px solid #4c4c4c;
+}
+footer .container p{
+    margin: 10px 0;
+    font: 0.7em 'Roboto', sans-serif;
+    color: #999999;
+}
+footer .container p:nth-child(4){
+    margin:-70px 25px 0 0;
+    float: right;
+}
+
+.col{
+    font:0.8em 'Roboto', sans-serif;
+    color:#8c8c8c;
+}
+.col img{
+    margin-top: 17px;
+    border:6px solid #e1e1e1;
+    border-radius: 4px;
+    
+}
+.col p{
+    margin-top: 13px;
+    font-size: 13px;
+    letter-spacing: 1px;
+    line-height: 18px;
+    color: #3e3e3e;
+    font-family: "Helvetica";
+}
+#picturelist li img{
+    float: left;
+    margin: 10px 10px 0 0;
+}
+
+#picturelist li{
+    overflow: auto;
+    padding: 10px;
+    border-bottom: 1px dotted #d3d3d3;
+}
+
+#picturelist li p{
+    font: 12px 'Roboto', sans-serif;
+}
+
+#picturelist form div{
+    margin-top: 35px;
+}
+
+#formcontact input{
+    margin-top: 15px; 
+}
+#formcontact div{
+    margin-top: 35px;
+}
+
+#formcontact textarea{
+    border: 1px solid #ccc;
+    border-radius: 3px;
+}
+
+::placeholder{
+    color:#d4d4d4
+}
+
+.btn1{
+    width: 163px;
+    height: 32px;
+    text-align: left;
+    font-size: 12px;
+    color: #016999;
+    font-family: "Helvetica";
+    padding: 9px 10px;
+    margin-top: 20px;
+    border: 1px solid #d8d8d8;
+    border-radius: 4px;
+    background-image: linear-gradient(#e8e8e8,#f6f6f6,#f3f3f3,#e8e8e8);
+}
+.btn1 span{
+    float: right;
+    font-size:1.3em;
+}
+
+
+
+#icons2 i {
+    font-size: 4.1em;
+    color: #aaa;
+    text-shadow: 1px 2px 3px #a5a5a5;
+}
+.fa-rss-square:hover { color: orange!important }
+.fa-facebook-square:hover { color: darkblue!important }
+.fa-linkedin:hover { color: skyblue!important }
+.fa-youtube-square:hover { color: red!important }
+.fa-tumblr-square:hover { color: turquoise!important }
+
+
+form div { margin: 10px 0}
+input:not([type="submit"]) {
+    width: 100%;
+    font: .7em Verdana;
+    color: #333;
+    padding: 10px 14px;
+    border: 1px solid #cfcfcf;
+    outline: none;
+    border-radius: 4px; 
+}
+
+
+.btn2 {
+    border: 1px solid #004a80;
+    border-radius: 4px;
+    background: linear-gradient(to right, #316599, #3c77b3, #306193, #306193);
+    padding: 10px 14px;
+    font: .8em Georgia;
+    color: #fff;
+    width: 163px;
+    text-align: left;
+}
+.btn2 span {
+    float: right
+}
+.btn2:active {
+    box-shadow: 0 0 5px #333;
+}
+
+@media only screen and (min-width: 768px) {
+    .container {
+        max-width: 940px;
+        margin: auto;
+    }
+    header { text-align: inherit }
+    #menu { float: right }
+    #menu li { display: inline-block}
+    .row::after {
+        content: '';
+        display: table; 
+        clear: both;
+    }
+    .col {
+        width: calc(33.33% - 14px);
+        float: left;
+        padding: 2em 0;
+    }
+ }
